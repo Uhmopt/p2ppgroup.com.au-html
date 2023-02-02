@@ -101,6 +101,14 @@
   background-image: url(../img/team/4.jpg);
 }
 
+.carousel-item-team-05 {
+  background-image: url(../img/team/5.jpg);
+}
+
+.carousel-item-team-06 {
+  background-image: url(../img/team/6.jpg);
+}
+
 /* 1.4. about parallax IMG BACKGROUND */
 .parallax-years {
   background-image: url(../img/about/1.jpg);
@@ -877,7 +885,7 @@ body.body-dark .bottom-credits {
 /* 11. navigation */
 .logo .logo-light {
   width: 120px;
-  filter: grayscale(1) brightness(2);
+  filter: grayscale(1) brightness(2.5);
   opacity: 1;
   -moz-opacity: 1;
   -webkit-opacity: 1;
@@ -3438,7 +3446,18 @@ body.body-dark .color-change {
 }
 
 .carousel-item-all {
-  height: 70vh;
+  height: 40vh;
+}
+
+.carousel-item-all > div.badges {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+}
+
+.carousel-item-all > div.badges > img {
+  width: 150px !important;
 }
 
 /* 38. blog */
