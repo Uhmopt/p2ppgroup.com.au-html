@@ -2912,9 +2912,9 @@ button {
   width: -webkit-calc(100% - 40px);
   width: -moz-calc(100% - 40px);
   width: calc(100% - 40px);
-  height: -webkit-calc(100% - 40px);
-  height: -moz-calc(100% - 40px);
-  height: calc(100% - 40px);
+  height: -webkit-calc(30% - 40px);
+  height: -moz-calc(30% - 40px);
+  height: calc(30% - 40px);
   top: 20px;
   right: 20px;
   bottom: 20px;
@@ -2936,9 +2936,9 @@ button {
     width: -webkit-calc(100% - 20px);
     width: -moz-calc(100% - 20px);
     width: calc(100% - 20px);
-    height: -webkit-calc(100% - 20px);
-    height: -moz-calc(100% - 20px);
-    height: calc(100% - 20px);
+    height: -webkit-calc(30% - 20px);
+    height: -moz-calc(30% - 20px);
+    height: calc(30% - 20px);
     top: 10px;
     right: 10px;
     bottom: 10px;
