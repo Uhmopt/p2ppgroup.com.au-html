@@ -884,7 +884,7 @@ body.body-dark .bottom-credits {
 
 /* 11. navigation */
 .logo .logo-light {
-  width: 120px;
+  width: 150px;
   filter: grayscale(1) brightness(2.5);
   opacity: 1;
   -moz-opacity: 1;
@@ -895,7 +895,7 @@ body.body-dark .bottom-credits {
 }
 
 .logo .logo-dark {
-  width: 120px;
+  width: 150px;
   filter: grayscale(1) brightness(0.5);
   opacity: 0;
   -moz-opacity: 0;
