@@ -3451,13 +3451,14 @@ body.body-dark .color-change {
 
 .carousel-item-all > div.badges {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 30px;
+  left: 30px;
   display: flex;
+  gap: 10px;
 }
 
 .carousel-item-all > div.badges > img {
-  width: 150px !important;
+  height: 80px !important;
 }
 
 /* 38. blog */
