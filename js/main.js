@@ -336,8 +336,34 @@ $(function () {
       $('#model-image').removeClass('carousel-item-news-02');
       $('#model-image').removeClass('carousel-item-news-03');
 
+      if (imgSrc === '01') {
+        $('#model-image-view-button').addClass('hidden-mobile-devices');
+      } else {
+        $('#model-image-view-button').removeClass('hidden-mobile-devices');
+      }
+
       $('#model-image').addClass('carousel-item-news-' + imgSrc);
+      $('#detail-view-image').attr(
+        'href',
+        `img/news/news-gallery/gallery-1/${imgSrc?.[1] ?? '1'}.jpg`
+      );
     });
+  });
+
+  $('#model-image').on('click', function (e) {
+    const mouseX = e.offsetX;
+    const mouseY = e.offsetY;
+
+    const width = e.target.offsetWidth;
+    const height = e.target.offsetHeight;
+
+    if (mouseY > height / 2) {
+      window.open('pdf/Self Licensing Offer.pdf', '_blank').focus();
+    } else if (mouseX < width / 2) {
+      window.open('pdf/Authorised Representative Offer.pdf', '_blank').focus();
+    } else {
+      window.open('pdf/Credit Representative Offer.pdf', '_blank').focus();
+    }
   });
 
   // 8. magnificPopup
