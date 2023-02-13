@@ -495,12 +495,119 @@ $(function () {
     }
     return !1;
   });
-  // 10.1. contact modal
-  $('.contact-modal-launcher, .contact-modal-closer').on('click', function (e) {
+
+  // 10.1. profile modal
+  $('.profile-modal-luncher, .contact-modal-closer').on('click', function (e) {
     e.preventDefault();
     if ($('.contact-modal').hasClass('open')) {
       $('.contact-modal').removeClass('open');
     } else {
+      // attr
+      const name = $(this).attr('name');
+
+      $('#profile-modal-img').attr('src', `img/people/${name}.jpg`);
+
+      if (name === 'Matthew') {
+        $('#profile-modal-title').html(`Director of Advice & Software`);
+        $('#profile-modal-name').html(`Matthew McBride`);
+
+        $('#profile-modal-description-1').html(`
+          <h4>Experience</h4>
+          <br />
+          <p>Matthew has headed up and run Licensee and Compliance services at multiple AFSL Dealer Groups over the last 15 years</p>
+          <br />
+          <p>Also an experienced financial adviser that has assisted many clients and affiliated professionals with their holistic financial needs</p>
+        `);
+        $('#profile-modal-description-2').html(`
+          <h4>Education</h4>
+          <br />
+          <ul>
+            <li>Bachelor Business (Finance)</li>
+            <li>Graduate Certificate Professional Accounting</li>
+            <li>Advanced Diploma Financial Services</li>
+            <li>Certificate IV Financial & Mortgage Broking</li>
+            <li>Certificate IV Training & Assessment</li>
+          </ul>
+        `);
+
+        $('#profile-modal-banner-1').attr('src', `img/banners/P2PAdvice.png`);
+        $('#profile-modal-banner-2').attr(
+          'src',
+          `img/banners/P2PProfessional.png`
+        );
+
+        $('#profile-modal-email').attr('href', `mailto:mmcbride@p2pp.com.au`);
+        $('#profile-modal-email').html(`mmcbride@p2pp.com.au`);
+        $('#profile-modal-phone').html(`0411 722 854`);
+      }
+
+      if (name === 'Janet') {
+        $('#profile-modal-title').html(`Director of Lending`);
+        $('#profile-modal-name').html(`Janet Len`);
+
+        $('#profile-modal-description-1').html(`
+          <h4>Experience</h4>
+          <br />
+          <p>Janet has operated her full-spectrum financial adviser business for over 15 years drawing on her previous experience across corporate, commercial and consumer finance, credit management and marketing strategies</p>
+        `);
+        $('#profile-modal-description-2').html(`
+          <h4>Education</h4>
+          <br />
+          <ul>
+            <li>Bachelor of Economics</li>
+            <li>Graduate Diploma in Applied Finance and Investment</li>
+            <li>Certificate IV Financial & Mortgage Broking</li>
+            <li>Diploma of Financial Services (Financial Planning)</li>
+          </ul>
+        `);
+
+        $('#profile-modal-banner-1').attr(
+          'src',
+          `img/banners/P2PAccountants.png`
+        );
+        $('#profile-modal-banner-2').attr('src', ``);
+
+        $('#profile-modal-email').attr('href', `mailto:janet@p2pgroup.com.au`);
+        $('#profile-modal-email').html(`janet@p2pgroup.com.au`);
+        $('#profile-modal-phone').html(`0448 996 809`);
+      }
+
+      if (name === 'Angelo') {
+        $('#profile-modal-title').html(
+          `Director of Accounting & Self Licensing`
+        );
+        $('#profile-modal-name').html(`Angelo D'Ambrosio`);
+
+        $('#profile-modal-description-1').html(`
+          <h4>Experience</h4>
+          <br />
+          <p>Angelo has operated her full-spectrum financial adviser business for over 15 years drawing on her previous experience across corporate, commercial and consumer finance, credit management and marketing strategies</p>
+        `);
+        $('#profile-modal-description-2').html(`
+          <h4>Education</h4>
+          <br />
+          <ul>
+            <li>Bachelor of Economics</li>
+            <li>Graduate Diploma in Applied Finance and Investment</li>
+            <li>Certificate IV Financial & Mortgage Broking</li>
+            <li>Diploma of Financial Services (Financial Planning)</li>
+          </ul>
+        `);
+
+        $('#profile-modal-banner-1').attr(
+          'src',
+          `img/banners/P2PAccountants.png`
+        );
+        $('#profile-modal-banner-2').attr(
+          'src',
+          `img/banners/P2PCompliance.png`
+        );
+
+        $('#profile-modal-email').attr('href', `mailto:angelo@p2pgroup.com.au`);
+        $('#profile-modal-email').html(`angelo@p2pgroup.com.au`);
+        $('#profile-modal-phone').html(`0409 418 494`);
+      }
+
       $('.contact-modal').addClass('open');
     }
   });
