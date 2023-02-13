@@ -548,7 +548,7 @@ $(function () {
         $('#profile-modal-description-1').html(`
           <h4>Experience</h4>
           <br />
-          <p>Janet has operated her full-spectrum financial adviser business for over 15 years drawing on her previous experience across corporate, commercial and consumer finance, credit management and marketing strategies</p>
+          <p>Janet has operated her full-spectrum financial advisory business for over 15 years drawing on her previous experience across corporate, commercial and consumer finance, credit management and marketing strategies</p>
         `);
         $('#profile-modal-description-2').html(`
           <h4>Education</h4>
@@ -561,10 +561,7 @@ $(function () {
           </ul>
         `);
 
-        $('#profile-modal-banner-1').attr(
-          'src',
-          `img/banners/P2PAccountants.png`
-        );
+        $('#profile-modal-banner-1').attr('src', `img/banners/P2PLending.png`);
         $('#profile-modal-banner-2').attr('src', ``);
 
         $('#profile-modal-email').attr('href', `mailto:janet@p2pgroup.com.au`);
@@ -581,16 +578,24 @@ $(function () {
         $('#profile-modal-description-1').html(`
           <h4>Experience</h4>
           <br />
-          <p>Angelo has operated her full-spectrum financial adviser business for over 15 years drawing on her previous experience across corporate, commercial and consumer finance, credit management and marketing strategies</p>
+          <p>Angelo has operated his full-spectrum Accounting & Financial Advisory business for over 30 years</p>
         `);
         $('#profile-modal-description-2').html(`
           <h4>Education</h4>
           <br />
           <ul>
-            <li>Bachelor of Economics</li>
-            <li>Graduate Diploma in Applied Finance and Investment</li>
-            <li>Certificate IV Financial & Mortgage Broking</li>
+            <li>Bachelor of Business</li>
             <li>Diploma of Financial Services (Financial Planning)</li>
+          </ul>
+          <br />
+          <h4>Professional Qualifications & Associations</h4>
+          <br />
+          <ul>
+            <li>Fellow of institute of Public Accountants</li>
+            <li>Registered Tax agent</li>
+            <li>FChFP - Association of FInancial Advisers</li>
+            <li>SMSF Specialist Adviser™</li>
+            <li>Accredit Aged Care Professional™</li>
           </ul>
         `);
 
