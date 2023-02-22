@@ -236,6 +236,25 @@
               </div>
             </div>
             <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-12">
+              <div class="inner-spacer inner-spacer-the-overline">
+                <div style="text-align: center">
+                  <img
+                    src="img/icons/group-video.png"
+                    style="width: 300px"
+                    class="video-modal-luncher cursor-pointer"
+                  />
+                  <!-- divider start -->
+                  <div class="divider-l"></div>
+                  <!-- divider end -->
+                  <!-- divider start -->
+                  <div class="divider-l"></div>
+                  <!-- divider end -->
+                </div>
+              </div>
+            </div>
+            <!-- col end -->
           </div>
           <!-- row end -->
           <!-- row start -->
@@ -1123,6 +1142,61 @@
     </section>
     <!-- acknowledgement end -->
 
+    <!-- video modal -->
+    <div id="video-modal" class="contact-modal">
+      <!-- container start -->
+      <div class="container">
+        <!-- center container start -->
+        <div class="center-container-contact-modal">
+          <!-- center block start -->
+          <div class="center-block-contact-modal">
+            <!-- row start -->
+            <div class="center-block-contact-modal-padding-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <video
+                      id="group-video"
+                      controls
+                      style="
+                        position: relative;
+                        width: 100%;
+                        height: 65vh;
+                        object-fit: contain;
+                        object-position: center;
+                      "
+                    >
+                      <source src="videos/group-video.mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- row end -->
+
+            <!-- divider start -->
+            <div class="divider-l"></div>
+            <!-- divider end -->
+            <!-- row start -->
+            <div class="row center-block-contact-modal-padding-bottom">
+              <div class="col-lg-12">
+                <!-- contact modal closer start -->
+                <div id="video-modal-closer" class="contact-modal-closer">
+                  <span class="ion-close"></span>
+                </div>
+                <!-- contact modal closer end -->
+              </div>
+            </div>
+            <!-- row end -->
+          </div>
+          <!-- center block end -->
+        </div>
+        <!-- center container end -->
+      </div>
+      <!-- container end -->
+    </div>
+    <!-- video modal -->
+
     <!-- profile modal -->
     <div class="contact-modal">
       <!-- container start -->
@@ -1268,7 +1342,7 @@
             <div class="row center-block-contact-modal-padding-bottom">
               <div class="col-lg-12">
                 <!-- contact modal closer start -->
-                <div class="contact-modal-closer">
+                <div id="profile-modal-closer" class="contact-modal-closer">
                   <span class="ion-close"></span>
                 </div>
                 <!-- contact modal closer end -->

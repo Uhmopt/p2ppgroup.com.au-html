@@ -497,7 +497,7 @@ $(function () {
   });
 
   // 10.1. profile modal
-  $('.profile-modal-luncher, .contact-modal-closer').on('click', function (e) {
+  $('.profile-modal-luncher, #profile-modal-closer').on('click', function (e) {
     e.preventDefault();
     if ($('.contact-modal').hasClass('open')) {
       $('.contact-modal').removeClass('open');
@@ -614,6 +614,18 @@ $(function () {
       }
 
       $('.contact-modal').addClass('open');
+    }
+  });
+
+  // 10.1. video modal
+  $('.video-modal-luncher, #video-modal-closer').on('click', function (e) {
+    e.preventDefault();
+    if ($('#video-modal').hasClass('open')) {
+      $('#video-modal').removeClass('open');
+      $('#group-video').get(0).play(false);
+    } else {
+      $('#video-modal').addClass('open');
+      $('#group-video').get(0).play(true);
     }
   });
 });
