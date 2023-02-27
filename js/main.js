@@ -571,7 +571,7 @@ $(function () {
 
       if (name === 'Angelo') {
         $('#profile-modal-title').html(
-          `Director of Accounting & Self Licensing`
+          `Director of Accounting & SMSF Services`
         );
         $('#profile-modal-name').html(`Angelo D'Ambrosio`);
 
